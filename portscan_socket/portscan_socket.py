@@ -44,7 +44,7 @@ for port in range(MIN_PORT, MAX_PORT+1):
     except KeyboardInterrupt:
         # User typed Ctrl-C and wants to end the program
         print("Program ended on your request.")
-        exit
+        exit()
     except: # Ignore other exceptions
         pass
     
