@@ -35,6 +35,8 @@ class PortScanner:
             except KeyboardInterrupt:
                 print("Scan interrupted by user.")
                 return
+            except TimeoutError:
+                pass
             
 
 
