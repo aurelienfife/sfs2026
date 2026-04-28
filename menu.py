@@ -5,8 +5,10 @@ Menu structure that can be used in Python
 - run appropriate option / or prompt again
 '''
 
-# Café ordering option
 
+# In the assessment you'd need to authenticate first
+
+# Café ordering option
 # Variable for user prompting
 user_choice = "" # Give it an empty value
 
@@ -24,12 +26,22 @@ while user_choice != "4":   # will change when menu is displayed
     # Main match case
     match user_choice:
         case "1":
-            pass
+            option1()
         case "2":
-            pass
+            option2
         case "3":
-            pass
+            option3
         case "4":
             print("You chose to quit. Bye.")
         case _:
             print("You have not entered a valid option.")
+
+# For each case you can set up a function
+def option1():
+    pass
+
+def option2():
+    pass
+
+def option3():
+    pass
